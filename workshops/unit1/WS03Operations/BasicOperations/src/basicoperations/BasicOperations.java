@@ -24,8 +24,24 @@ public class BasicOperations {
         int subtrahend;
         int difference;
         
+        int product;
+        int multiplicant;
+        int multiplier;
+        
+        int dividend;
+        int divisor;
+        int quotient;
+        
+        int remanider;
+        
         minuend = -23;
-        subtrahend = -6;        
+        subtrahend = -6;
+        
+        multiplicant = 10;
+        multiplier = 90;
+        
+        dividend = 100;
+        divisor = 50;
         
         //initilization
         addend1 = 5;
@@ -47,6 +63,21 @@ public class BasicOperations {
         
         System.out.println("the subtraction of " + minuend + " - " + subtrahend +
                 " is equal to " + (minuend - subtrahend));
+        
+        product = multiplier * multiplicant;
+        
+        System.out.println("the multiplication of " + multiplier + " * "
+              + multiplicant + " is equal to --> " + product);
+        
+        quotient = dividend / divisor;
+        
+        System.out.println("the division of " + dividend + " / " 
+                + " is equal to --> " + quotient);
+        
+        remanider = dividend % divisor;
+        
+        System.out.println("the division remanider of " + dividend + " % " 
+                + divisor + " is equal to --> " + remanider);
             }
     
 }
