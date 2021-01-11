@@ -1,3 +1,4 @@
+package hw02;
 import java.util.Scanner;
 import java.math.*;
 
