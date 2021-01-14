@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ws05iterations;
 
-/**
- *
- * @author HP
- */
+package ws05iterations;
+import java.util.Scanner;
+import java.math.*;
+
 public class WS05Iterations {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -39,7 +31,7 @@ public class WS05Iterations {
         System.out.println("First 5 odd numbers");
         
         int stop;
-        stop=20;
+        stop=10;
         for(int j=1; j<10;j+=2){
             System.out.println("odd number -> " + j);
         }
@@ -52,6 +44,10 @@ public class WS05Iterations {
             product = table * j;
             System.out.println("7*" + j + " = " + product);
         }
+        
     }
     
 }
+        
+        
+   
