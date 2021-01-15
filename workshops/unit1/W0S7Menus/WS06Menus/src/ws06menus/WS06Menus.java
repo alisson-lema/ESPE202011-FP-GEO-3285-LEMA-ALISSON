@@ -40,13 +40,39 @@ public class WS06Menus {
                      System.out.println("the sum is -->" + sum);
                      break;
                 case 2:
-                     System.out.println("The subtraction is");
+                    int minuend;
+                    int subtrahend;
+                    int subtraction;
+                    System.out.println("Enter minuend -->");
+                    minuend = input.nextInt();
+                    System.out.println("Enter subtrahend -->");
+                    subtrahend = input.nextInt();
+                    subtraction = minuend - subtrahend;
+                     System.out.println("The subtraction is -->" + subtraction);
                 break;
                 case 3:
-                    System.out.println("The multiplcation is");
+                    int factor1;
+                    int factor2;
+                    int multiplication;
+                    System.out.println("Enter factor 1--> ");
+                    factor1 = input.nextInt();
+                    System.out.println("Enter factor 2--> ");
+                    factor2 = input.nextInt();
+                    multiplication = factor1 * factor2;
+                    System.out.println("The multiplication is-->" + multiplication);
                     break;
                 case 4:
-                    System.out.println("The division is");
+                    float dividend;
+                    float divider;
+                    float division;
+                    System.out.println("Enter dividend -->");
+                    dividend = input.nextFloat();
+                    System.out.println("Enter divider --> ");
+                    divider = input.nextFloat();
+                    System.out.println("Enter division --> ");
+                    division = input.nextFloat();
+                    division= dividend/divider;
+                    System.out.println("The division is ");
                     break;
                 case 5:
                     System.out.println("Good Bye my friend");
