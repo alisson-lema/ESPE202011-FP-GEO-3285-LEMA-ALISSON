@@ -17,9 +17,9 @@ public class HW04 {
         do {
             System.out.println(" ========= Calculator =======");
             System.out.println("1. -> Calcular el area de una elipse");
-            System.out.println("2. -> Multiplication Tables : 15");
+            System.out.println("2. -> Multiplication Tables : 20");
             System.out.println("3. -> 2 raised to power");
-            System.out.println("4. -> This is a while loop from 1 to 10 ");
+            System.out.println("4. -> This is a while loop from 1 to 30 ");
             System.out.println("5. -> Exit"); 
 
             System.out.println("Enter your menu option --> ");
