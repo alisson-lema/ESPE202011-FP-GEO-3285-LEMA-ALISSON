@@ -82,6 +82,8 @@ public class WS04LogicalOperators {
         p = false;
         q = false;
         System.out.println(" ( " + p + " ^ " + q + " ) " + (p && q));
+        
+         
     }
     
 }
