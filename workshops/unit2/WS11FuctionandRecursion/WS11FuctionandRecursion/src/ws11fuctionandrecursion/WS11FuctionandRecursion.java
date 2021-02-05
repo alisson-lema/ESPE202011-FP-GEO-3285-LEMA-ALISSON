@@ -1,14 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ws11fuctionandrecursion;
 
-package ws10fuctions;
-import java.util.Scanner;
-import java.math.*;
-public class WS10Fuctions {
+/**
+ *
+ * @author HP
+ */
+public class WS11FuctionandRecursion {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int divd = 5;
+        // TODO code application logic here
+          int divd = 5;
         int divr = 10;
         float quotient = 0;
         int x = 0;
@@ -73,6 +81,6 @@ public class WS10Fuctions {
         } else{
         return (n * factorial(n-1));
     }
-    } 
-}
+    }
     
+}
