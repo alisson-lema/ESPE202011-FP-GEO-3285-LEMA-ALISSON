@@ -23,17 +23,7 @@ public class HW11_Recursion_Example {
         int option = 0;
         
         do {
-            System.out.println("Hello, choose an option");
-            System.out.println("1.-Calculate the flow rate by speed and time");
-            System.out.println("2.-Calculate the rotational displacement of a "
-                    + "landslide using : Width of the break surface, length of"
-                    + " the break surface and depth of the break surface by "
-                    + "perpendicularity to the original topography "
-                    + "of the terrain.");
-            System.out.println("0.- Exit");
-            
-            System.out.println("Enter your menu option-->");
-            option = (int) input.nextFloat();// TODO code application logic here
+            option = printMenu(input);
     
     switch(option){    
                 case 1 :
@@ -54,6 +44,21 @@ public class HW11_Recursion_Example {
             }
         } while ( option !=0);
         // TODO code application logic here
+    }
+
+    private static int printMenu(Scanner input) {
+        int option;
+        System.out.println("Hello, choose an option");
+        System.out.println("1.-Calculate the flow rate by speed and time");
+        System.out.println("2.-Calculate the rotational displacement of a "
+                + "landslide using : Width of the break surface, length of"
+                + " the break surface and depth of the break surface by "
+                + "perpendicularity to the original topography "
+                + "of the terrain.");
+        System.out.println("0.- Exit");
+        System.out.println("Enter your menu option-->");
+        option = (int) input.nextFloat();// TODO code application logic here
+        return option;
     }
 
     private static void DeclareFarewell() {
