@@ -35,7 +35,7 @@ System.out.println("5.Salir");
 op=Entrada.nextInt();  
 
     switch(op) {
-case 1: 
+case 4: 
      System.out.println("Calcular Altura Maxima");
          System.out.println("Ingresa Velocidad Inicial: ");
           vini=Entrada.nextFloat();
@@ -46,7 +46,7 @@ case 1:
           System.out.println("La Altura Maxima es:"+total+"Mts");
           System.out.println();
           break;
-case 2 :
+case 5 :
     
         System.out.println("	Calcular Tiempo de Altura Maxima");
        
@@ -63,7 +63,7 @@ case 2 :
           
           
           
-          case 3 :
+          case 6 :
     
         System.out.println("Calcular Tiempo en el Aire");
         System.out.println("Ingresa Velocidad Inicial: ");
@@ -76,7 +76,7 @@ case 2 :
           System.out.println();
           break;  
           
-          case 4 :
+          case 7:
     
         System.out.println("	Calcular Alcanze Maxima");
           
