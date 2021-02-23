@@ -29,7 +29,7 @@ public class ArraysQuizz {
         double[] notas = new double[numAlum]; 
     
         for (i = 0; i < notas.length; i++) {
-            System.out.print("Alumno " + (i + 1) + " Nota final: ");
+            System.out.print("Alumno" + (i + 1) + " Nota final: ");
             notas[i] = sc.nextDouble();
         }
         for (i = 0; i < notas.length; i++) {
@@ -37,10 +37,6 @@ public class ArraysQuizz {
         }
         System.out.println("=================");
         media = suma / notas.length;
-        System.out.printf("Nota media del curso: %.2f %n", media);
-
-        
+        System.out.printf("Nota media del curso: %.2f %n", media); 
     }
     }
-    
-
