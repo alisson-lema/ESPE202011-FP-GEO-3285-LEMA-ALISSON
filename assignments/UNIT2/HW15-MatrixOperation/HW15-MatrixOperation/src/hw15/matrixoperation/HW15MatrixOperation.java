@@ -5,7 +5,7 @@
  */
 package hw15.matrixoperation;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 /**
  *
@@ -18,44 +18,74 @@ public class HW15MatrixOperation {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-     int filas=Integer.parseInt(JOptionPane.showInputDialog("Digita las filas de las matries"));
-     int columnas=Integer.parseInt(JOptionPane.showInputDialog("Digita las columnas de las matrices"));
-     int matrizA[][]=new int[filas][columnas];
-     int matrizB[][]=new int[filas][columnas];
-     int matrizC[][]=new int[filas][columnas];
-     int matrizRes[][]=new int[filas][columnas];
-        System.out.println("Datos de la Matriz A:");
-        for(int i=0;i<filas;i++){
-        for(int j=0;j<columnas;j++){
-        matrizA[i][j]=Integer.parseInt(JOptionPane.showInputDialog("Digita un número para la posición: a["+i+"]["+j+"]"+" de la matriz A"));
-        System.out.print(matrizA[i][j]+" ");
-        }
-        System.out.println();
-        }
-        System.out.println("Datos de la Matriz B:");
-        for(int i=0;i<filas;i++){
-        for(int j=0;j<columnas;j++){
-        matrizB[i][j]=Integer.parseInt(JOptionPane.showInputDialog("Digita un número para la posición: a["+i+"]["+j+"]"+" de la matriz B"));                            
-        System.out.print(matrizB[i][j]+" ");
-        }
-        System.out.println();
-        }  
-        System.out.println("Datos de la Matriz c:");
-        for(int i=0;i<filas;i++){  
-        for(int j=0;j<columnas;j++){
-        matrizC[i][j]=Integer.parseInt(JOptionPane.showInputDialog("Digita un número para la posición: a["+i+"]["+j+"]"+" de la matriz c"));                            
-        System.out.print(matrizC[i][j]+" ");
-        }
-        System.out.println();
-        }
-        System.out.println("Resta de las tres matrices:");
-        for(int i=0;i<filas;i++){
-        for(int j=0;j<columnas;j++){
-        matrizRes[i][j]=matrizA[i][j]-matrizB[i][j]-matrizC[i][j];                            
-        System.out.print(matrizRes[i][j]+" ");
-        }
-        System.out.println();
-}
+     Scanner ent =new Scanner(System.in);
+     
+     System.out.println("Enter number of rows ->");
+     int fil=ent.nextInt();
+     System.out.println("Enter number of columns ->");
+     int col = ent.nextInt();
+     
+     System.out.println();
+     System.out.println("Enter matrix A:");
+     int [][] m1=readMatrix(fil,col);
+     
+     System.out.println();
+     System.out.println("Enter matrix B:");
+     int [][] m2=readMatrix(fil,col);
+     
+     System.out.println();
+     System.out.println("Enter matrix C:");
+     int [][] m3=readMatrix(fil,col);
+     
+     int [][] subtraction =Msubtraction(m1,m2,m3);
+     
+     System.out.println();
+     System.out.println("M1-M2-M3=");
+     printMatrix(subtraction);
     }
     
+    public static int [][]readMatrix(int fila ,int columna){
+        int [][] rslt = new int [fila][columna];
+        Scanner sc = new Scanner (System.in);
+        
+        for (int i =0; i< fila ;i++){
+            for (int j =0;j<columna; j++){
+                rslt[i][j] = sc.nextInt();
+            }
+        }
+        return rslt;
+    }    
+
+    private static int[][] Msubtraction(int[][] m1, int[][] m2, int[][] m3) {
+      int fil = m1.length;
+      int col=m1[0].length;
+      int [][] result = new int [fil][col];
+      
+      for (int i=0; i< fil; i++){
+          for (int j=0; j< col;j++){
+              result[i][j]=m1[i][j]-m2[i][j]-m3[i][j];
+          }
+      }
+      return result;
+    }
+
+    private static void printMatrix(int[][] matrix) {
+      int fil = matrix.length;
+      int col =matrix[0].length;
+      
+      for(int i=0; i< fil; i++){
+          for(int j = 0; j< col; j++){
+              System.out.println(matrix[i][j] +" ");
+          }
+          System.out.println();
+      }
+    }
 }
+
+    
+   
+
+    
+  
+
+
