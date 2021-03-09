@@ -14,6 +14,7 @@ public class WS10Fuctions {
         int x = 0;
         int y = 0;
 
+        System.out.println("AUTHOR : ALISSON LEMA CHAVEZ");
         //call to divideTwoNumbers() function
         quotient = divideTwoNumbers(divd, divr);
 
