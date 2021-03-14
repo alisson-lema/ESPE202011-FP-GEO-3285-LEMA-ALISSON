@@ -40,7 +40,7 @@ public class HW16MatrixFuction {
         
         t=new float[n][m];
         
-         System.out.println("------Enter the elements of the matrix-------");
+         System.out.println("Enter the elements of the matrix");
          
          a=readMatrixElements(m, n, "A",input);
          b=readMatrixElements(m, n, "A",input);
@@ -90,6 +90,7 @@ public class HW16MatrixFuction {
                 t[i][j] = a[j][i];
             }
         }
+        
     }
 
     public static float[][] addTwoMatrices(int m, int n, float[][] a, float[][] b) {
