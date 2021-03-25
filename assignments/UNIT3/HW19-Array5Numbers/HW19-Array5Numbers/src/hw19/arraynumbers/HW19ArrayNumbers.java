@@ -29,8 +29,9 @@ public class HW19ArrayNumbers {
         Cadena = Cadena  + "\nOrdered Numbers ";
         for(int i=0;i < numbers.length;i++){
                 Cadena = Cadena + "\n" +  numbers[i] ;
-            
+        
         }
+        
         JOptionPane.showMessageDialog(null,Cadena);
  }
 public static void Insercion (int[] numbers) {
