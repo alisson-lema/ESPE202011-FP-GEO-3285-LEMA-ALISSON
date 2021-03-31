@@ -14,7 +14,7 @@ import ec.edu.espe.Farmsystem.model.Rabbit;
  */
 public class RabbitController {
     public void save (Rabbit rabbit){
-        String data = rabbit.getName() + "," + rabbit.getRace()+ "," + rabbit.getColor()+ "," + rabbit.getAge();
+        String data = rabbit.getName() + ";" + rabbit.getRace()+ ";" + rabbit.getColor()+ ";" + rabbit.getAge();
     FileManager.save(data, "rabbits");
     }
     public String read (){

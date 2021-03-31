@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Utils;
+package utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,7 +16,8 @@ import java.io.IOException;
  * @author HP
  */
 public class FileManager {
-    public static boolean createFile(String fileName) {
+    
+     public static boolean createFile(String fileName) {
         boolean created = false;
         try {
             File file = new File(fileName + ".txt");
@@ -40,8 +41,8 @@ public class FileManager {
          createFile(fileName);
          
          try {
-             FileWriter myWrite= new FileWriter(fileName + ".txt",true);
-             myWrite.write(data+System.getProperty("Line.separator"));
+             FileWriter myWrite= new FileWriter(fileName + ".csv",true);
+             myWrite.write( data +System.getProperty("Line.separator"));
              myWrite.close();
              System.out.println(" a new record of" + fileName + "was saved");
              saved = true;
@@ -54,7 +55,7 @@ public class FileManager {
      public static String read ( String fileName){
         fileName = null;
         String text = "";
-        String document = "C:\\Users\\HP\\Desktop\\FP-GEO-3285-LEMA-ALISSON\\assignments\\UNIT3\\HW21-ADT\\FarmSystem\\rabbits.txt";
+        String document = "C:\\Users\\HP\\Desktop\\FP-GEO-3285-LEMA-ALISSON\\Exams\\UNIT3\\EXAM FP-Mammal\\Dogs.csv";
         try ( BufferedReader textBr = new BufferedReader(new FileReader(document))) {
             while ((fileName = textBr.readLine()) != null) {
                 text = fileName +"\n" ;
@@ -67,4 +68,3 @@ public class FileManager {
     }
 
  }
-

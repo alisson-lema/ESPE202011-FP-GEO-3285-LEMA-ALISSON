@@ -1,1 +1,6 @@
-nullHolandes,Negro,Pechan,4nullMini Rex,Blanco,Mailo,6nullCaliforliano,Negro,Pepito,7nullHolandes,Gris,Mailo,7nullMini Lop,Negro,Lupita,8
+Holandes,Negro,Pechan,4
+Mini Rex,Blanco,Mailo,6
+Califorliano,Negro,Pepito,7
+Holandes,Gris,Mailo,7
+Mini Lop,Negro,Lupita,8
+Holandes;Negro;romeo;5Mini Rex;Gris;Romeo;5null
